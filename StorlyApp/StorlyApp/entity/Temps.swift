@@ -7,20 +7,34 @@
 
 import Foundation
 
-class Temps: Codable{
+struct Temps: Codable{
     
     var templateCoverImageUrlString : String?
-    var section : String?
-    var isFree : Bool?
- 
+    var section: Section?
+    var isFree: Bool?
+    
     init(){
         
     }
     
-    init(templateCoverImageUrlString: String, section: String, isFree : Bool){
+    init(templateCoverImageUrlString: String,section: Section, isFree: Bool){
         self.templateCoverImageUrlString = templateCoverImageUrlString
         self.section = section
         self.isFree = isFree
     }
     
+
+}
+
+enum Section: String, Codable {
+    case birthday = "Birthday"
+    case classic = "Classic"
+    case clubhouse = "\u{1f44b} Clubhouse"
+    case collage = "Collage"
+    case colors = "Colors"
+    case digital = "Digital"
+    case film = "Film"
+    case illustration = "Illustration"
+    case minimal = "Minimal"
+    case paper = "Paper"
 }

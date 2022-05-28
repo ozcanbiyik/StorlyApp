@@ -8,5 +8,5 @@
 import Foundation
 
 class TempsResponse: Codable{
-    var temps: [Temps]?
+    let results: [Temps]?
 }

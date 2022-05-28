@@ -23,7 +23,6 @@
 		7CBB2B54283FAD3900928764 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B53283FAD3900928764 /* ListRouter.swift */; };
 		7CBB2B58283FB32100928764 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B56283FB32100928764 /* ItemCell.swift */; };
 		7CBB2B59283FB32100928764 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CBB2B57283FB32100928764 /* ItemCell.xib */; };
-		7CBB2B622841488B00928764 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7CBB2B612841488B00928764 /* SwiftyJSON */; };
 		7CBB2B6A2841C13700928764 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B692841C13700928764 /* DetailVC.swift */; };
 		7CBB2B6C2841CF1100928764 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B6B2841CF1100928764 /* DetailCell.swift */; };
 		7CBB2B6E2842539B00928764 /* SubsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B6D2842539B00928764 /* SubsVC.swift */; };
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CBB2B622841488B00928764 /* SwiftyJSON in Frameworks */,
 				7CBB2B31283F0C0D00928764 /* Kingfisher in Frameworks */,
 				7CBB2B34283F0C2C00928764 /* Alamofire in Frameworks */,
 			);
@@ -221,7 +219,6 @@
 			packageProductDependencies = (
 				7CBB2B30283F0C0D00928764 /* Kingfisher */,
 				7CBB2B33283F0C2C00928764 /* Alamofire */,
-				7CBB2B612841488B00928764 /* SwiftyJSON */,
 			);
 			productName = StorlyApp;
 			productReference = 7CBB2B18283EF77600928764 /* StorlyApp.app */;
@@ -254,7 +251,6 @@
 			packageReferences = (
 				7CBB2B2F283F0C0C00928764 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				7CBB2B32283F0C2C00928764 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				7CBB2B602841488A00928764 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 7CBB2B19283EF77600928764 /* Products */;
 			projectDirPath = "";
@@ -534,14 +530,6 @@
 				kind = branch;
 			};
 		};
-		7CBB2B602841488A00928764 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -554,11 +542,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7CBB2B32283F0C2C00928764 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		7CBB2B612841488B00928764 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7CBB2B602841488A00928764 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

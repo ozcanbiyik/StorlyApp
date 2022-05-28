@@ -9,13 +9,13 @@ import UIKit
 import Kingfisher
 
 class DetailVC: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var subsButton: UIButton!
     
     var temps: Temps?
     var tempList = [Temps]()
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -24,8 +24,8 @@ class DetailVC: UIViewController {
         if(temps?.isFree == true){
             subsButton.isHidden = true
         }
-      
-    
+        
+        
     }
     
     @IBAction func backButtonClicked(_ sender: Any) {

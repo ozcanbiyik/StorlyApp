@@ -30,7 +30,7 @@ class ListVC: UIViewController {
         
         ListRouter.createModule(ref: self)
         listPresenterObject?.getTemps()
-    
+        
         
     }
     
@@ -80,7 +80,7 @@ extension ListVC: UICollectionViewDataSource{
         }
     }
     
-   
+    
     
 }
 

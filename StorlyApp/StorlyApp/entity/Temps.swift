@@ -25,7 +25,7 @@ struct Temps: Codable{
         self.canvasImages = canvasImages
     }
     
-
+    
 }
 
 enum Section: String, Codable {

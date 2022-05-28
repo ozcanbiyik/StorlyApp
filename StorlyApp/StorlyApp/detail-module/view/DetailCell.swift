@@ -10,14 +10,14 @@ import Kingfisher
 
 class DetailCell: UICollectionViewCell {
     
-
+    
     @IBOutlet weak var detailImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-        
+    
     func tempImageName(imageName: String){
         if let url = URL(string: "\(imageName)"){
             DispatchQueue.main.async {

@@ -194,7 +194,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Weekly"/>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="DNZ-VG-VzF" eventType="touchUpInside" id="BZC-BS-RbD"/>
+                                    <action selector="buttonClick:" destination="DNZ-VG-VzF" eventType="touchUpInside" id="yej-lz-kCS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkf-C4-fF6">
@@ -207,7 +207,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Monthly"/>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="DNZ-VG-VzF" eventType="touchUpInside" id="e1V-Jh-QSp"/>
+                                    <action selector="buttonClick:" destination="DNZ-VG-VzF" eventType="touchUpInside" id="6T3-M3-TXd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggx-wU-Otd">
@@ -220,7 +220,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Yearly"/>
                                 <connections>
-                                    <action selector="buttonClicked:" destination="DNZ-VG-VzF" eventType="touchUpInside" id="NvH-Ye-2gu"/>
+                                    <action selector="buttonClick:" destination="DNZ-VG-VzF" eventType="touchUpInside" id="cpg-5L-JK0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdw-HC-4LQ">

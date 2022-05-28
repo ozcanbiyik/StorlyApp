@@ -31,7 +31,7 @@ class ListInteractor: PresenterToInteractorListProtocol{
         }
         
     }
-        
+    
     func getSegmentTemps(segmentName: String) {
         AF.request("http://storly-dev.herokuapp.com/storly/api/templates", method: .get).response{ response in
             if let data = response.data{

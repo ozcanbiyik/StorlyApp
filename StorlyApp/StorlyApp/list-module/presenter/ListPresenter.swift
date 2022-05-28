@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class ListPresenter: ViewToPresenterListProtocol{
-   
+    
     
     
     var listInteractor: PresenterToInteractorListProtocol?
@@ -22,7 +22,7 @@ class ListPresenter: ViewToPresenterListProtocol{
     func segmentTemps(segmentName: String) {
         listInteractor?.getSegmentTemps(segmentName: segmentName)
     }
-
+    
 }
 
 extension ListPresenter: InteractorToPresenterListProtocol{

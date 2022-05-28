@@ -24,6 +24,9 @@
 		7CBB2B58283FB32100928764 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B56283FB32100928764 /* ItemCell.swift */; };
 		7CBB2B59283FB32100928764 /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CBB2B57283FB32100928764 /* ItemCell.xib */; };
 		7CBB2B622841488B00928764 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7CBB2B612841488B00928764 /* SwiftyJSON */; };
+		7CBB2B6A2841C13700928764 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B692841C13700928764 /* DetailVC.swift */; };
+		7CBB2B6C2841CF1100928764 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B6B2841CF1100928764 /* DetailCell.swift */; };
+		7CBB2B6E2842539B00928764 /* SubsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBB2B6D2842539B00928764 /* SubsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		7CBB2B53283FAD3900928764 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		7CBB2B56283FB32100928764 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		7CBB2B57283FB32100928764 /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		7CBB2B692841C13700928764 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		7CBB2B6B2841CF1100928764 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		7CBB2B6D2842539B00928764 /* SubsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +113,7 @@
 		7CBB2B36283F0F7B00928764 /* detail-module */ = {
 			isa = PBXGroup;
 			children = (
-				7CBB2B42283F108000928764 /* protocols */,
 				7CBB2B41283F107A00928764 /* view */,
-				7CBB2B40283F107300928764 /* presenter */,
-				7CBB2B3F283F106900928764 /* interactor */,
-				7CBB2B3E283F106200928764 /* router */,
 			);
 			path = "detail-module";
 			sourceTree = "<group>";
@@ -119,11 +121,7 @@
 		7CBB2B37283F0F9200928764 /* subs-module */ = {
 			isa = PBXGroup;
 			children = (
-				7CBB2B48283F10C700928764 /* protocols */,
 				7CBB2B47283F10C000928764 /* view */,
-				7CBB2B45283F109A00928764 /* presenter */,
-				7CBB2B44283F109400928764 /* interactor */,
-				7CBB2B43283F108D00928764 /* router */,
 			);
 			path = "subs-module";
 			sourceTree = "<group>";
@@ -178,74 +176,21 @@
 			path = entity;
 			sourceTree = "<group>";
 		};
-		7CBB2B3E283F106200928764 /* router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = router;
-			sourceTree = "<group>";
-		};
-		7CBB2B3F283F106900928764 /* interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = interactor;
-			sourceTree = "<group>";
-		};
-		7CBB2B40283F107300928764 /* presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = presenter;
-			sourceTree = "<group>";
-		};
 		7CBB2B41283F107A00928764 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7CBB2B692841C13700928764 /* DetailVC.swift */,
+				7CBB2B6B2841CF1100928764 /* DetailCell.swift */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		7CBB2B42283F108000928764 /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = protocols;
-			sourceTree = "<group>";
-		};
-		7CBB2B43283F108D00928764 /* router */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = router;
-			sourceTree = "<group>";
-		};
-		7CBB2B44283F109400928764 /* interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = interactor;
-			sourceTree = "<group>";
-		};
-		7CBB2B45283F109A00928764 /* presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = presenter;
 			sourceTree = "<group>";
 		};
 		7CBB2B47283F10C000928764 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				7CBB2B6D2842539B00928764 /* SubsVC.swift */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		7CBB2B48283F10C700928764 /* protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = protocols;
 			sourceTree = "<group>";
 		};
 		7CBB2B55283FB2E800928764 /* ItemCell */ = {
@@ -340,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CBB2B54283FAD3900928764 /* ListRouter.swift in Sources */,
+				7CBB2B6E2842539B00928764 /* SubsVC.swift in Sources */,
 				7CBB2B50283FAD1300928764 /* ListPresenter.swift in Sources */,
+				7CBB2B6C2841CF1100928764 /* DetailCell.swift in Sources */,
+				7CBB2B6A2841C13700928764 /* DetailVC.swift in Sources */,
 				7CBB2B20283EF77600928764 /* ListVC.swift in Sources */,
 				7CBB2B1C283EF77600928764 /* AppDelegate.swift in Sources */,
 				7CBB2B58283FB32100928764 /* ItemCell.swift in Sources */,

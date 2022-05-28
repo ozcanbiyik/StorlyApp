@@ -12,8 +12,6 @@ class ListPresenter: ViewToPresenterListProtocol{
    
     
     
-    
-    
     var listInteractor: PresenterToInteractorListProtocol?
     var listView: PresenterToViewListProtocol?
     

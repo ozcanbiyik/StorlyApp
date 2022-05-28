@@ -16,7 +16,7 @@ class ListVC: UIViewController {
     
     var listPresenterObject: ViewToPresenterListProtocol?
     
-    //var temp: Temps?
+    var temps: Temps?
     var tempList = [Temps]()
     
     override func viewDidLoad() {
@@ -30,6 +30,7 @@ class ListVC: UIViewController {
         
         ListRouter.createModule(ref: self)
         listPresenterObject?.getTemps()
+    
         
     }
     
@@ -43,6 +44,8 @@ class ListVC: UIViewController {
             listPresenterObject?.listInteractor?.getSegmentTemps(segmentName: sender.titleForSegment(at: sender.selectedSegmentIndex)!)
         }
     }
+    
+    
     
     func setupGridView(){
         let flow = colView?.collectionViewLayout as! UICollectionViewFlowLayout
@@ -62,6 +65,22 @@ extension ListVC: UICollectionViewDataSource{
         cell.setup(with: tempList[indexPath.row])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let temps = tempList[indexPath.row]
+        collectionView.deselectItem(at: indexPath, animated: true)
+        performSegue(withIdentifier: "toDetailVC", sender: temps)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailVC"{
+            let temps = sender as? Temps
+            let destVC  = segue.destination as! DetailVC
+            destVC.temps = temps
+        }
+    }
+    
+   
     
 }
 
